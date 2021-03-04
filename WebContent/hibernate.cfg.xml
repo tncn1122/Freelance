@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=freelance</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.search.autoregister_listeners">true</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="Freelance1.UserSkill" />
+        <mapping class="Freelance1.RatingFa" />
+        <mapping class="Freelance1.JobCagetory" />
+        <mapping class="Freelance1.Rating" />
+        <mapping class="Freelance1.Skills" />
+        <mapping class="Freelance1.Account" />
+        <mapping class="Freelance1.Jobs" />
+        <mapping class="Freelance1.JobsSkill" />
+        <mapping class="Freelance1.Cagetory" />
+        <mapping class="Freelance1.Favorites" />
+        <mapping class="Freelance1.JobsUser" />
+        <mapping class="Freelance1.Users" />
+    </session-factory>
+</hibernate-configuration>
